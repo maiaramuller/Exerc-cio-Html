@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;1,100;1,200&family=Open+Sans:wght@300&family=Playfair+Display:ital@1&family=Poppins&family=Raleway:wght@100&family=Roboto+Mono:ital,wght@0,500;1,400&family=Roboto:wght@900&display=swap" rel="stylesheet">
   </head>
   <body>
     
     <h1>MAIARA ALESSANDRA MULLER</h1>
-    <hr>
-    <img src="assets/foto-perfil.png" alt="foto de perfil" width="200" />
-    <hr>
-    <h4>DESCRIÇÃO</h4>
 
-    <p>
+    <div id="imagem">
+      <img src="assets/foto-perfil.png" alt="foto de perfil" width="200" id="img" />
+    </div>
+    <hr>
+    
+    <h4 class="color">DESCRIÇÃO</h4>
+
+    <p class="texto">
       Sou uma estudante de tecnologia, buscando constantemente desenvolver
       minhas habilidades e conhecimentos na área de Sistemas para Internet. Com
       22 anos, sou uma jovem dedicada e motivada, sempre buscando novos desafios
@@ -24,34 +31,34 @@
       sociedade.
     </p>
     <hr>
-    <h4>EXPERIÊNCIA</h4>
+    <h4 class="color">EXPERIÊNCIA</h4>
 
-    <table>
+    <table class="texto">
       <tr>
-        <th>AWS Cloud Data Engineering</th>
+        <th id="th">AWS Cloud Data Engineering</th>
       </tr>
       <tr>
         <td>Compass UOL · Estágio</td>
       </tr>
       <tr>
-        <td><b>CFC Caberlon</b></td>
+        <td><b id="th">CFC Caberlon</b></td>
       </tr>
       <tr>
         <td>Auxiliar Administrativo II</td>
       </tr>
     </table>
     <hr>
-    <h4>ESCOLARIDADE</h4>
+    <h4 class="color">ESCOLARIDADE</h4>
 
-    <table>
+    <table class="texto">
       <tr>
-        <td><b>UniCesumar</b></td>
+        <td><b id="th">UniCesumar</b></td>
       </tr>
       <tr>
         <td>Sistemas para Internet</td>
       </tr>
       <tr>
-        <td><b>UniCesumar</b></td>
+        <td><b id="th">UniCesumar</b></td>
       </tr>
       <tr>
         <td>Segurança Alimentar</td>
@@ -60,23 +67,23 @@
     <hr>
 
 
-    <h4>CERTIFICAÇÕES</h4>
+    <h4 class="color">CERTIFICAÇÕES</h4>
 
-    <ul>
+    <ul class="texto">
       <li>AWS Certified Cloud Practitioner</li>
       <li>Introdução ao Desenvolvimento com JavaScript</li>
       <li>Soft Skills</li>
     </ul>
     <hr>
-    <h4>CONTATOS</h4>
+    <h4 class="color">CONTATOS</h4>
 
-    <form action="/" method="post">
+    <form action="/" method="post"  class="texto">
       <label>Telefone:</label> <input type="tel">
-      <input type="submit" value="Enviar">
+      <input type="submit" value="Enviar" class="texto">
       <label>E-mail:</label> <input type="email">
-      <input type="submit" value="Enviar">
+      <input type="submit" value="Enviar"class="texto">
       <label>Rede Social:</label> <input type="url">
-      <input type="submit" value="Enviar">
+      <input type="submit" value="Enviar" class="texto">
     </form>
     
   </body>

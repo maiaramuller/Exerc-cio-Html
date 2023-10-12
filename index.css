@@ -1,0 +1,44 @@
+* {
+background-color: #003f69;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #f0ce4e;
+
+}
+
+
+hr{
+    color: rgba(0, 0, 0, 0.922);
+}
+
+#imagem{
+text-align: center;
+margin-bottom: 35px;
+
+}
+
+.color{
+    color: #f0ce4e;
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto{
+    color: azure;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#th{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#img{
+    border: 5px solid #f0ce4e
+}
+
+body{
+    padding: 10px;
+}
