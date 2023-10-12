@@ -36,7 +36,9 @@ margin-bottom: 35px;
 }
 
 #img{
-    border: 5px solid #f0ce4e
+    border-radius: 50%; 
+    border: 5px solid #f0ce4e; 
+    
 }
 
 body{
