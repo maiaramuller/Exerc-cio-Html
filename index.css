@@ -1,5 +1,10 @@
 * {
 background-color: #003f69;
+position:static;
+}
+
+a{
+    color: #fff;
 }
 
 h1{
