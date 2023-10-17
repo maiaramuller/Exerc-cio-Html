@@ -3,9 +3,11 @@ background-color: #003f69;
 }
 
 h1{
-    text-align: center;
+    text-align: start;
     font-family: 'Poppins', sans-serif;
     color: #f0ce4e;
+    position: absolute;
+    top: 100px;
 
 }
 
@@ -15,9 +17,10 @@ hr{
 }
 
 #imagem{
-text-align: center;
+text-align: end;
 margin-bottom: 35px;
-
+margin-right: 200px;
+margin-top: 35px;
 }
 
 .color{
@@ -43,4 +46,99 @@ margin-bottom: 35px;
 
 body{
     padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-areas: "inicio inicio"
+                         "escola discri"
+                         "contato expe"
+                         "contato certificado" ;
+    
+}
+
+.descri{
+    grid-area: discri;
+}
+
+.inicio{
+    grid-area: inicio;
+}
+
+.expe{
+    grid-area: expe;
+}
+
+.escola{
+    grid-area: escola;
+}
+
+.certificado{
+    grid-area: certificado;
+}
+
+.contato{
+    grid-area: contato;
+    margin: 10px;
+
+}
+
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.color{
+    -webkit-animation: tracking-in-expand-fwd 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand-fwd, color {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: #003f69;
+        }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+   h1{
+    position: static;
+   }
 }
